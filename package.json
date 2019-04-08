@@ -1,0 +1,32 @@
+{
+	"name": "auth",
+	"version": "0.1.0",
+	"description": "",
+	"main": "index.js",
+	"scripts": {
+		"audit-ci": "audit-ci --moderate --report --package-manager npm",
+		"format": "prettier ./**/*.{json,js,ts} -l",
+		"format:fix": "npm run format -- --write",
+		"lint": "tslint -p .",
+		"test": "echo \"Error: no test specified\" && exit 1"
+	},
+	"author": "",
+	"license": "ISC",
+	"dependencies": {
+		"@types/jsonwebtoken": "^8.3.2",
+		"@types/koa": "^2.0.48",
+		"@types/node": "^11.13.0",
+		"@types/passport": "^1.0.0",
+		"jsonwebtoken": "^8.5.1",
+		"koa": "^2.7.0",
+		"passport": "^0.4.0",
+		"ts-node": "^8.0.3",
+		"typescript": "^3.4.2"
+	},
+	"devDependencies": {
+		"audit-ci": "^1.5.0",
+		"prettier": "^1.16.4",
+		"tslint": "^5.15.0",
+		"tslint-config-prettier": "^1.18.0"
+	}
+}
